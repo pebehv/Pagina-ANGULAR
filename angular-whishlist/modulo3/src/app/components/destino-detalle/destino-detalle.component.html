@@ -1,0 +1,26 @@
+<p>destino-detalle works!</p>
+<p>
+	Aqui vemos detalle de un destino
+
+	<br>
+	{{destino.id}}
+	<br>
+	{{destino.nombre}}
+
+</p>
+<hr>
+<mgl-map 
+	[style]="style"
+	[zoom]="[2]"
+	style= "height: 50vh; width: 100vw;"
+
+>
+	<mgl-marker [lngLat]= "[-75.551012, 10.421185] ">
+		<div 
+			onclick="alert('hola' ) " 
+			class="marker" 
+		>
+			Hola mundo
+		</div>
+	</mgl-marker>
+</mgl-map>
